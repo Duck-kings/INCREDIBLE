@@ -1,0 +1,15 @@
+@import './vars';
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+}
+
+::after, ::before, h1, h2, h3, h4, h5, h6, p, li, img{
+    margin: 0;
+    padding: 0;
+}
+
