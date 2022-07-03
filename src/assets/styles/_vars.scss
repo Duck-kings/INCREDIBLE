@@ -1,10 +1,22 @@
 $base: 5px;
 
 /* colors */
-
 $title: #313131;
 $subtitle: rgba(115, 115, 115, .75);
 $text: rgba(0, 0, 0, .75);
 $input: rgba(101, 101, 101, .75);
 $secondary: #CF404D;
 $bg-sidebar: #2D3E4F;
+
+/* Break points */
+$min-width-sm: 576px;
+$min-width-md: 768px;
+$min-width-lg: 992px;
+$min-width-xl: 1200px;
+$min-width-xxl: 1400px;
+
+$max-width-xs: 575.98px;
+$max-width-sm: 767.98px;
+$max-width-md: 991.98px;
+$max-width-lg: 1199.98px;
+$max-width-xl: 1399.98px;
