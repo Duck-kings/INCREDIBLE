@@ -10,3 +10,45 @@
 }
 
 /* Comercial section in this file */
+
+.comercial{
+    width: 100%;
+    background: $secondary;
+    padding: $base*9 $base*15;
+
+    &__container{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        p{
+            color: white;
+            font-size: 1.9375rem;
+        }
+
+        .btn{
+            font-size: 1rem;
+            transition: all $transition;
+        }
+
+        .btn:hover{
+            background: white;
+            color: $secondary;
+            cursor: pointer;
+        }
+    }
+
+    @media screen and (max-width: $max-width-sm) {
+        &__container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            p{
+                margin-bottom: $base*3;
+                font-size: 1.25rem;
+            }
+        }
+    }
+}

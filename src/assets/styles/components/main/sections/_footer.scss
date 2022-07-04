@@ -1,0 +1,10 @@
+.main__footer{
+    width: 100%;
+    max-height: $base*14;
+    padding: $base*5 0;
+    p{
+        font-size: 1rem;
+        color: $text;
+        text-align: center;
+    }
+}

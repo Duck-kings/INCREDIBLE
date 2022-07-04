@@ -7,7 +7,7 @@
     <title>INCREDIBLE</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
     <aside class="sidebar">
@@ -95,7 +95,7 @@
             </section>
             <section class="section__inner">
                 <section class="section__outer about">
-                    <div class="about__heading">
+                    <div class="heading">
                         <h1>Section Heading</h1>
                         <h2>This is some text inside of a div block.</h2>
                     </div>
@@ -135,15 +135,15 @@
                     </ul>
                 </section>
             </section>
-            <section class="section__inner">
-                <section class="section__outer comercial">
+            <section class="section__inner comercial">
+                <section class="section__outer comercial__container">
                     <p>Here you can put some text</p>
-                    <div>Call To Action</div>
+                    <div class="btn">Call To Action</div>
                 </section>
             </section>
             <section class="section__inner">
                 <section class="section__outer gallery">
-                    <div class="gallery__heading">
+                    <div class="heading">
                         <h1>Lightbox Section</h1>
                         <h2>This is some text inside of a div block.</h2>
                     </div>
@@ -175,20 +175,27 @@
                     </ul>
                 </section>
             </section>
-            <section class="section__inner">
-                <section class="section__outer contact">
-                    <div class="contact__heading">
+            <section class="section__inner contact">
+                <section class="section__outer">
+                    <div class="heading">
                         <h1>Contact Form</h1>
                         <h2>This is some text inside of a div block.</h2>
                     </div>
-                    <div>
-                        <!--
-                            Thinks how you can do this!!!
-                        -->
+                    <div class="contact__action">
+                        <form class="contact__form">
+                            <div class="form__inputs">
+                                <input type="text" placeholder="Name">
+                                <input type="email" placeholder="Email">
+                            </div>
+                            <div class="form__message">
+                                <textarea placeholder="Message..."></textarea>
+                            </div>
+                            <button type="submit" class="form__submit">Submit</button>
+                        </form>
                     </div>
                 </section>
             </section>
-            <footer class="main_footer">
+            <footer class="main__footer">
                 <p>Copyright Incredible. Made in Webflow.</p>
             </footer>
         </main>

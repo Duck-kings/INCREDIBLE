@@ -1,0 +1,89 @@
+.contact{
+    width: 100%;
+    background: #FAFAFA;
+    border-bottom: 1px solid #E1E1E1;
+    border-top: 1px solid #E1E1E1;
+
+    &__action{
+        width: 100%;
+        max-width: $base*116;
+        margin: 0 auto;
+    }
+
+    &__form{
+        width: 100%;
+    }
+}
+
+.form__inputs{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: $base*3;
+    
+    input{
+        min-width: $base*48;
+        color: $input;
+        width: 48%;
+        border: none;
+        outline: none;
+        padding: $base*2 $base*6;
+        box-shadow: 0 0 0 0 rgba(64, 64, 71, .3);
+        border-radius: $base;
+        font-size: 1rem;
+
+        &:focus{
+            outline: 1px solid rgba(64, 64, 71, .3);
+        }
+    }
+}
+.form__message{
+    width: 100%;
+    margin-bottom: $base*3;
+
+    textarea{
+        width: 100%;
+        min-width: $base*48;
+        min-height: $base*44;
+        padding: $base*4 $base*6;
+        color: $input;
+        font-size: 1rem;
+        resize: none;
+        border: none;
+        outline: none;
+        border-radius: $base;
+
+        &:focus{
+            outline: 1px solid rgba(64, 64, 71, .3);
+        }
+    }
+}
+.form__submit{
+    width: 100%;
+    border: none;
+    outline: none;
+    background: $secondary;
+    border-radius: $base;
+    color: white;
+    padding: $base*2 $base*5;
+    cursor: pointer;
+    transition: background $transition;
+
+    &:hover{
+        background: darken($secondary, 10%);
+    }
+}
+
+@media screen and (max-width: $max-width-sm) {
+    .form__inputs{
+        flex-direction: column;
+
+        input{
+            width: 100%;
+        }
+
+        input:first-child{
+            margin-bottom: $base*3;
+        }
+    }
+}

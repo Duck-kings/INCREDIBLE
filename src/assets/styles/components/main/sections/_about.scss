@@ -1,0 +1,65 @@
+.about{
+    width: 100%;
+}
+.about__list{
+    width: 100%;
+    list-style: none;
+    display: flex;
+}
+
+.about__list__card{
+    width: 25%;
+    max-width: $base*48;
+    min-width: $base*48;
+    
+    div{
+        margin-bottom: $base*9;
+        width: $base*16;
+        height: $base*9;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    h3, p, a{
+        font-size: 1rem;
+    }
+
+    h3{
+        color: $title;
+        text-transform: uppercase;
+        margin-bottom: $base*2;
+    }
+
+    p{
+        color: $text;
+        margin-bottom: $base;
+        max-width: $base*44;
+    }
+
+    a{
+        color: $secondary;
+        text-transform: capitalize;
+    }
+}
+
+@media screen and (max-width: $max-width-lg) {
+    .about__list{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .about__list__card{
+        width: 45%;
+        margin-bottom: $base*5;
+    }
+}
+
+@media screen and (max-width: $max-width-xs) {
+    .about__list{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

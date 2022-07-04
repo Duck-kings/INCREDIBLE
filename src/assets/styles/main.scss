@@ -43,6 +43,20 @@ body{
     }
 }
 
+.section__inner{
+    padding: $base*13 $base*15;
+
+    @media screen and (max-width: $max-width-xs) {
+        padding: $base*3 $base*5;
+    }
+}
+
+.section__outer{
+    width: 100%;
+    max-width: $base*192;
+    margin: 0 auto;
+}
+
 a{
     text-decoration: none;
 }
@@ -54,8 +68,27 @@ a{
     color: white;
     border: 2px solid white;
     border-radius: $base;
-    transition: all .2s ease-in;
+    transition: all $transition;
     padding: $base*2 $base*5; 
+}
+
+.heading{
+    width: 100%;
+    text-align: center;
+    margin-bottom: $base*13;
+
+    h1{
+        font-size: 1.9375rem;
+        color: $title;
+        text-transform: uppercase;
+        margin-bottom: $base*4;
+    }
+    h2{
+        font-size: 1.2rem;
+        color: $subtitle;
+        font-weight: 300;
+    }
+
 }
 
 @import './components/aside.scss';

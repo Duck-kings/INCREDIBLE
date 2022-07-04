@@ -31,6 +31,7 @@
         &{
             position: absolute;
             left: -45%;
+            max-height: 100vh;
         }
         &.open{
             width: 45%;
@@ -94,7 +95,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%) rotate(45deg);
-        transition: background .2s ease-in;
+        transition: background $transition;
 
         &:last-child{
             transform: translate(-50%) rotate(-45deg);
@@ -116,6 +117,7 @@
 }
 .nav__list{
     width: 100%;
+    list-style: none;
 
     &__item{
         width: 100%;
@@ -128,7 +130,7 @@
         a{
             color: white;
             font-size: .875rem;
-            transition: color .2s ease-in;
+            transition: color $transition;
             text-transform: uppercase;
 
             &:hover{

@@ -1,0 +1,23 @@
+.gallery{
+    width: 100%;
+}
+
+.gallery__list{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    &__picture{
+        max-width: $base*43;
+        max-height: $base*43;
+        margin-bottom: $base*4;
+        img{
+            height: $base*43;
+            width: $base*43;
+        }
+    }
+}
+
+
